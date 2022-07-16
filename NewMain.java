@@ -65,6 +65,7 @@ public class NewMain {
            list.GuardarRecursivo(list.L, "Luis");
              list.GuardarRecursivo(list.L, "Maria");
                list.GuardarRecursivo(list.L, "Chantal");
+               list.GuardarRecursivo(list.L, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar metus libero, in pretium massa molestie ac. Cras porttitor magna eget metus iaculis, sit amet");
                
                System.out.println("Los datos de la lista son: "+list.Imprimir(list.L)+"\n");
            
