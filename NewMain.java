@@ -25,8 +25,9 @@ public class NewMain {
          PilaTramites pi = new PilaTramites();
         Cola colita = new Cola();
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-       String[][] nombre ={{"Silvestre","8","Andrés López", "1","Andreina Gonzalez","5","Maria Perez","0","Armando Paredes","10"}};
-       String[] per = new String[1];
+       String[][] nombre ={{"Silvestre","Andrés López","Andreina Gonzalez","Maria Perez","Armando Paredes"},
+           {"8","1","5","0","10"}};
+       String[][] per = new String[1][1];
        // Ejercicio 1
        System.out.println("0: el cliente no atendió.\n" +
                                   "1~4: no satisfecho.\n" +
@@ -35,22 +36,22 @@ public class NewMain {
                                    "9~10: muy satisfecho.");
            for (int i = 0; i < per.length; i++) {
                for (int j = 0; j < per.length; j++) {
-                     if (nombre[0][1].equals("8") || nombre[0][1].equals("6") ||  nombre[0][1].equals("7") ) {
+                     if (nombre[1][0].equals("8") || nombre[1][0].equals("6") ||  nombre[1][0].equals("7") ) {
                    System.out.println("\n Silvestre esta satisfecho");
                }
                
-               if (nombre[0][3].equals("1") || nombre[0][3].equals("2") || nombre[0][3].equals("3") ||nombre[0][3].equals("4")) {
+               if (nombre[1][1].equals("1") ||nombre[1][1].equals("2") || nombre[1][1].equals("3") ||nombre[1][1].equals("4")) {
                     System.out.println("\n Andrés López no está satisfecho satisfecho");
                }
                
-               if (nombre[0][5].equals("5")) {
+               if (nombre[1][2].equals("5")) {
                    System.out.println("\n Andreina Gonzalez es neutro");
                }
-               if (nombre[0][7].equals("0")) {
+               if (nombre[1][3].equals("0")) {
                    System.out.println("\n Maria Perez no fue atendida");
                }
                
-                if (nombre[0][9].equals("9") || nombre[0][9].equals("10")) {
+                if (nombre[1][4].equals("9") || nombre[1][4].equals("10")) {
                    System.out.println("\n Armando Paredes esta muy satisfecho");
                }          
                }
@@ -73,6 +74,9 @@ public class NewMain {
            int tiem1 = 0 ;
            int tiem2 = 0;
            int tiem3 = 0;
+           int limite = 0;
+           int limite2 = 0;
+           int limite3 = 0;
         
            System.out.println("Ejercicio 3");
            do{
@@ -111,8 +115,10 @@ public class NewMain {
            
                            
                    case 2: 
-                       if (!colita.vacio()) {
+                       if (limite < 1) {
+                             if (!colita.vacio()) {
                               pi.Apilar("Cedulación");
+                              limite++;
                        if (a == 2) {
                              tiem1 = 15;
                        }else{
@@ -121,13 +127,19 @@ public class NewMain {
                        }else{
                            System.out.println("No hay gente");
                        }
+                       }else{
+                           System.out.println("Solo puede solicitar un tramite de cada uno");
+                       }
+                     
                    
                     
                        break;
                        
                         case 3: 
-                            if (!colita.vacio()) {
+                            if (limite2 < 1) {
+                                 if (!colita.vacio()) {
                                   pi.Apilar("Cita de pasaporte");
+                                  limite2++;
                             if (a == 3) {
                                  tiem2 = 20; 
                             }else{
@@ -135,12 +147,20 @@ public class NewMain {
                             }
                             }else{
                                 System.out.println("No hay gente");
+                            }  
+                            }else{
+                                System.out.println("Solo puede solicitar un tramite de cada uno");
                             }
+                         
                     
                        break;
                         case 4:
-                            if (!colita.vacio()) {
+                            if (limite3 < 1) {
+                                
+                               
+                                   if (!colita.vacio()) {
                                   pi.Apilar("Retiro de documentos");
+                                   limite3++;
                             if (a == 4) {
                                     tiem3 = 3; 
                             }else{
@@ -150,6 +170,11 @@ public class NewMain {
                                 System.out.println("No hay gente");
                             }
                           
+                                
+                            }else{
+                                 System.out.println("Solo puede solicitar un tramite de cada uno");
+                            }
+                         
                        
                             break;
                        
@@ -199,6 +224,9 @@ public class NewMain {
                     colita.Atender();
                  
                     pi.borraRapido();
+                    limite --;
+                    limite2 --;
+                    limite3--;
                      tiem1 = 0;
                      tiem2 = 0;
                      tiem3 = 0;

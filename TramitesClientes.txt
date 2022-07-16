@@ -1,25 +1,13 @@
 
 
-15/07/2022 21:49:56.475
-El cliente: Maria Victoria 33455687 Solicito estos tramites: Cita de pasaporte-Cedulación El tiempo fue: 35minutos
+15/07/2022 22:36:39.970
+El cliente: Maria Victoria 33455687 Solicito estos tramites: Retiro de documentos-Cita de pasaporte-Cedulación El tiempo fue: 38minutos
 
-15/07/2022 21:49:56.475
-El cliente: Luis Cordova 30277915 Solicito estos tramites: Cita de pasaporte-Retiro de documentos El tiempo fue: 23minutos
+15/07/2022 22:38:06.717
+El cliente: Maria Victoria 33455687 Solicito estos tramites: Retiro de documentos-Cita de pasaporte-Cedulación El tiempo fue: 38minutos
 
-15/07/2022 21:49:56.475
-El cliente: Chantal Alcala 30445687 Solicito estos tramites: Cedulación-Cita de pasaporte El tiempo fue: 35minutos
+15/07/2022 22:38:06.717
+El cliente: Luis Cordova 30277915 Solicito estos tramites: Retiro de documentos-Cita de pasaporte-Cedulación El tiempo fue: 38minutos
 
-15/07/2022 22:07:06.015
-
-15/07/2022 22:07:06.015
-
-15/07/2022 22:07:06.015
-
-15/07/2022 22:10:56.210
-El cliente: Maria Victoria 33455687 No realizo ningun tramite
-
-15/07/2022 22:10:56.210
-El cliente: Luis Cordova 30277915 No realizo ningun tramite
-
-15/07/2022 22:10:56.210
-El cliente: Chantal Alcala 30445687 No realizo ningun tramite
+15/07/2022 22:38:06.717
+El cliente: Chantal Alcala 30445687 Solicito estos tramites: Cedulación El tiempo fue: 15minutos
